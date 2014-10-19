@@ -21,9 +21,9 @@ ctry.each do |k,v|
             beds = inner_pg_data.css('#summary > div > div > div.col-8 > div > div:nth-child(2) > div.col-9 > div > div:nth-child(4)').text[/\d+/]
             bedrooms = inner_pg_data.css('#summary > div > div > div.col-8 > div > div:nth-child(2) > div.col-9 > div > div:nth-child(3)').text[/\d+/]
             capacity = inner_pg_data.css('#summary > div > div > div.col-8 > div > div:nth-child(2) > div.col-9 > div > div:nth-child(2)').text[/\d+/]
-            output << "{'country'   : #{k},
-                        'city'      : #{city},
-                        'name'      : #{name},
+            output << "{'country'   : '#{k}',
+                        'city'      : '#{city}',
+                        'name'      : '#{name}',
                         'price'     : #{price},
                         'bedrooms'  : #{bedrooms},
                         'beds'      : #{beds},
