@@ -18,9 +18,9 @@ ctry.each do |k,v|
             price = box.css('.price').text
             bedrooms = box.css('.bedrooms').text
             capacity = box.css('.accommodates').text
-            output << "{'country'   : #{k},
-                        'city'      : #{city},
-                        'name'      : #{name},
+            output << "{'country'   : '#{k}',
+                        'city'      : '#{city}',
+                        'name'      : '#{name}',
                         'price'     : #{price},
                         'bedrooms'  : #{bedrooms},
                         'capacity'  : #{capacity}
